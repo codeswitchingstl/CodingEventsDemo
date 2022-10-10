@@ -52,7 +52,7 @@ namespace coding_events_practice.Controllers
         [Route("Events/Edit")]
         public IActionResult SubmitEditEventForm(int eventId, string name, string description)
         {
-            EventData editingEvent = EventData.GetById(eventId);
+            Event editingEvent = EventData.GetById(eventId);
             editingEvent.Name = name;
             editingEvent.Description = description;
             return Redirect("/Events");
