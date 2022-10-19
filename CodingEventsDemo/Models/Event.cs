@@ -11,11 +11,12 @@ namespace CodingEventsDemo.Models
 
         public string ContactEmail { get; set; }
         public string Location { get; set; }
+        public int NumberAttendees { get; set; }
 
         public int Id { get; }
         static private int nextId = 1;
 
-        public Event(string name, string description, string contactEmail, string location)
+        public Event(string name, string description, string contactEmail, string location, int numberAttendees)
         {
             Name = name;
             Description = description;
@@ -23,6 +24,7 @@ namespace CodingEventsDemo.Models
 /*            Id = nextId;
             nextId++;*/
             Location = location;
+            NumberAttendees = numberAttendees;
         }
 
         public Event()

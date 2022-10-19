@@ -31,6 +31,12 @@ else
             <th>
                 Contact Email
             </th>
+            <th>
+                Location
+            </th>
+            <th>
+                Number of Attendees
+            </th>
 
         </tr>
         @foreach (var evt in Model)
@@ -40,6 +46,8 @@ else
                 <td>@evt.Name</td>
                 <td>@evt.Description</td>
                 <td>@evt.ContactEmail</td>
+                <td>@evt.Location</td>
+                <td>@evt.NumberAttendees</td>
             </tr>
         }
     </table>
