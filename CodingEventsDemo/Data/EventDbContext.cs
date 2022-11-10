@@ -8,8 +8,7 @@ namespace CodingEventsDemo.Data
     {
         public DbSet<Event> Events { get; set; }
 
-        public EventDbContext(DbContextOptions<EventDbContext> options)
-              : base(options)
+        public EventDbContext(DbContextOptions<EventDbContext> options): base(options)
         {
         }
     }
