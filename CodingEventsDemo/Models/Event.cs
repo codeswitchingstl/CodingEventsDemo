@@ -10,7 +10,7 @@ namespace CodingEventsDemo.Models
         public string Description { get; set; }
 
         public string ContactEmail { get; set; }
-
+        
         public EventType Type { get; set; }
 
         public int Id { get; set; }
