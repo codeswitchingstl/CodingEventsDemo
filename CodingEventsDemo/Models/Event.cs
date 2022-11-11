@@ -15,15 +15,15 @@ namespace CodingEventsDemo.Models
 
         public int Id { get; set; }
 
-        public Event()
-        {
-        }
-
         public Event(string name, string description, string contactEmail)
         {
             Name = name;
             Description = description;
             ContactEmail = contactEmail;
+        }
+
+        public Event()
+        {
         }
 
         public override string ToString()

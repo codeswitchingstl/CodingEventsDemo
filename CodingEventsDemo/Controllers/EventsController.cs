@@ -32,12 +32,12 @@ namespace coding_events_practice.Controllers
         public IActionResult Add()
         {
             AddEventViewModel addEventViewModel = new AddEventViewModel();
-
             return View(addEventViewModel);
         }
 
         [HttpPost]
-        public IActionResult Add(AddEventViewModel addEventViewModel)
+        [Route("Events/Add")]
+        public IActionResult NewEvent(AddEventViewModel addEventViewModel)
         {
             if (ModelState.IsValid)
             {
@@ -55,7 +55,7 @@ namespace coding_events_practice.Controllers
                 return Redirect("/Events");
             }
 
-            return View(addEventViewModel);
+            return View("Add", addEventViewModel);
         }
 
         public IActionResult Delete()
